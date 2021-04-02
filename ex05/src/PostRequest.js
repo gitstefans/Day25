@@ -7,7 +7,7 @@ class PostRequest extends React.Component {
     }
     componentDidMount() {
         const requestOptions = {
-            method: 'Post',
+            method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify({ title: 'React POST Request Example'})
         };
