@@ -13,12 +13,12 @@ class GetRequestErrorHandling extends React.Component {
                     const error = (data && data.message) || response.statusText;
                     return Promise.reject(error);
                 }
-                this.setState({ totalReactPackages: data.total })
+                this.setState({ totalReactPackages: data.total });
             })
             .catch(error => {
                 this.setState({ errorMessage: error.toString() });
                 console.error('There was an error!', error);
-            })
+            });
     }
     render() {
         const { errorMessage } = this.state;
