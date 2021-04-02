@@ -23,7 +23,7 @@ class PostRequestSetHeaders extends React.Component {
         const { articleId } = this.state; 
         return ( 
             <div className="card text-center m-3">
-                <h5 className="card-header">POST Request with set Headers</h5>
+                <h5 className="card-header">POST Request with Set Headers</h5>
                 <div className="card-body">Article Id: {articleId}</div>
             </div>
          );
